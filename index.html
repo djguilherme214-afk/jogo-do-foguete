@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foguete Espacial - Arcade Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="600" height="750"></canvas>
+    
+    <!-- Interface (HUD) -->
+    <div id="hud">
+      <div class="hud-item">PONTOS: <span id="scoreVal">0</span></div>
+      <div class="hud-item">RECORD: <span id="highScoreVal">0</span></div>
+      <div class="hud-item">VIDAS: <span id="livesVal">❤️❤️❤️</span></div>
+    </div>
+
+    <!-- Tela Inicial e Game Over -->
+    <div id="overlay" class="overlay">
+      <h1 id="overlayTitle">FOGUETE ESPACIAL 🚀</h1>
+      <p id="overlaySubtitle">
+        Mova com as <b>Setas</b> ou <b>A / D</b>.<br>
+        Atire com a tecla <b>Espaço</b> ou clicando no mouse!
+      </p>
+      <button id="startBtn">INICIAR JOGO</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
